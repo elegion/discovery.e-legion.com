@@ -38,7 +38,15 @@
 
             </div>
             <div class="header__email"><a class="header__email-link" href="mainlto:hello@e-legion.com">hello@e-legion.com</a></div>
-            <div class="header__consult"><a class="button button_sm" href="#" target="_blank">Получить консультацию</a></div>
+            <div class="header__consult"><a class="button button_sm js-smooth-scroll" href="#consultation-form">Получить консультацию</a></div>
+          </div>
+        </div>
+      </header>
+      <header class="page__header page__header_sub">
+        <div class="container">
+          <div class="header header_sub">
+            <div class="header__site"><a class="header__site-link" href="https://e-legion.com" target="_blank">На основной сайт ↗</a></div>
+            <div class="header__lang lang"><span class="lang__item lang__item_active">РУС</span><a class="lang__item" href="/en/">ENG</a></div>
           </div>
         </div>
       </header>
@@ -46,12 +54,8 @@
         <article class="main">
           <section class="stage plate main__stage" id="stage">
             <div class="stage__body plate__body">
-              <div class="stage__header">
-                <div class="stage__site"><a class="header__site-link" href="https://e-legion.com" target="_blank">На основной сайт ↗</a></div>
-                <div class="stage__lang lang"><span class="lang__item lang__item_active">РУС</span><a class="lang__item" href="#">ENG</a></div>
-              </div>
               <h1 class="h1 stage__title">Начните свой проект с&nbsp;Discovery Phase</h1>
-              <div class="stage__button"><a class="button button_block" href="#" target="_blank">Получить консультацию</a></div>
+              <div class="stage__button"><a class="button button_block js-smooth-scroll" href="#consultation-form">Получить консультацию</a></div>
             </div>
           </section>
           <section class="about main__about">
@@ -210,20 +214,20 @@
               </div>
             </div>
           </section>
-          <section class="services main__services">
+          <section class="services main__services" id="services">
             <div class="services__body">
               <div class="services__menu">
-                <ul class="services-menu">
-                  <li class="services-menu__item services-menu__item_active"><a class="services-menu__link" href="#mind-map">Mind Map</a></li>
-                  <li class="services-menu__item"><a class="services-menu__link" href="#user-story">User Stories</a></li>
-                  <li class="services-menu__item"><a class="services-menu__link" href="#user-flow">User Flow</a></li>
-                  <li class="services-menu__item"><a class="services-menu__link" href="#concept">Concept</a></li>
-                  <li class="services-menu__item"><a class="services-menu__link" href="#roadmap">Roadmap</a></li>
-                  <li class="services-menu__item"><a class="services-menu__link" href="#estimate">Estimate</a></li>
-                  <li class="services-menu__item"><a class="services-menu__link" href="#analysis">Анализ конкурентов</a></li>
+                <ul class="services-menu" id="services-menu">
+                  <li class="services-menu__item"><a class="services-menu__link services-menu__link_active js-smooth-scroll" href="#mind-map">Mind Map</a></li>
+                  <li class="services-menu__item"><a class="services-menu__link js-smooth-scroll" href="#user-story">User Stories</a></li>
+                  <li class="services-menu__item"><a class="services-menu__link js-smooth-scroll" href="#user-flow">User Flow</a></li>
+                  <li class="services-menu__item"><a class="services-menu__link js-smooth-scroll" href="#concept">Concept</a></li>
+                  <li class="services-menu__item"><a class="services-menu__link js-smooth-scroll" href="#roadmap">Roadmap</a></li>
+                  <li class="services-menu__item"><a class="services-menu__link js-smooth-scroll" href="#estimate">Estimate</a></li>
+                  <li class="services-menu__item"><a class="services-menu__link js-smooth-scroll" href="#analysis">Анализ конкурентов</a></li>
                 </ul>
               </div>
-              <div class="services__content">
+              <div class="services__content" id="services-content">
                 <h2 class="h2" id="mind-map">Mind Map</h2>
                 <p>Визуализация бизнес требований и ограничений</p>
                 <ul>
