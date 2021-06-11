@@ -18,6 +18,7 @@ function stickyInit() {
 	var blurClass = "page__header_blur";
 	var fadeClass = "page__header_fade";
 	var headerConsultClass = "header_consult";
+	var headerFixedClass = "header_fixed";
 
 	if (isFirefox() || isIE()) {
 		pageHeader.classList.add(fadeClass);
@@ -29,8 +30,10 @@ function stickyInit() {
 	function stickyControl() {
 		if (window.pageYOffset > top) {
 			pageHeader.classList.add(fixedClass);
+			header.classList.add(headerFixedClass);
 		} else {
 			pageHeader.classList.remove(fixedClass);
+			header.classList.remove(headerFixedClass);
 		}
 
 		if (window.pageYOffset > stageTop + stageHeight && window.pageYOffset < formTop - window.innerHeight) {
@@ -108,7 +111,7 @@ function smoothScroll() {
 	for (var i = 0; i < links.length; i++) {
 		links[i].addEventListener('click', function(e) {
 			e.preventDefault();
-			var nodeId = e.target.getAttribute("href").replace('#', '');
+			var nodeId = e.currentTarget.getAttribute("href").replace('#', '');
 			var node = document.getElementById(nodeId);
 			var offset = parseInt()
 			if (node) {
